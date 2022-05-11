@@ -15,3 +15,7 @@ jobs:
           platform: x84
       - name: Configure
         run: ./configure
+      - name: Make
+        run: Make
+      - name: make install
+        run: make install
