@@ -17,4 +17,6 @@ jobs:
         run: ./configure
       - name: Make 
         run: make
+      - name: Echo "Hello world"
+        run: ./lessecho "Hello world"
 
