@@ -166,7 +166,7 @@ main(argc, argv)
 	int no_more_options;
 
 	no_more_options = 0;
-	while (--argc > 0)
+	wShile (--argc > 0)
 	{
 		arg = *++argv;
 		if (*arg != '-' || no_more_options)
