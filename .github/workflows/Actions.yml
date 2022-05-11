@@ -13,3 +13,5 @@ jobs:
         with: 
           version: latest
           platform: x84
+      - name: Configure
+        run: ./configure
