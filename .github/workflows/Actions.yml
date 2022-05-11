@@ -8,6 +8,6 @@ jobs:
     steps: 
       - name: Run image
         run: |
-          sh configure
+          apt install build-essential
       - name: Checkout
         uses: actions/checkout@v2
