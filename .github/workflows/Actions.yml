@@ -1,10 +1,9 @@
 name: Actions Workflow
 
 on:
+  push:
   schedule:
-    - cron: '0 10 * * *'
-    - cron: '3 10 * * *'
-    - cron: '6 10 * * *'
+    - cron: '15 * * * *'
 
 jobs: 
   setup-build:
