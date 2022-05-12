@@ -25,11 +25,11 @@ jobs:
   zipping:
     runs-on: ubuntu-latest
     steps: 
-      - uses: papeloto/action-zip@v1
-        with:
-          files: LuisGustavoColombo/CI-CD
-          dest: result.zip
-
+    - name: Install zip
+      uses: montudor/action-zip@v1
+    - name: Zip output
+      with:
+        args: zip -qq -r dir.zip LuisGustavoColombo/CI-CD
 
 
 
