@@ -23,7 +23,7 @@ jobs:
       - name: Echo "Hello world"
         run: ./lessecho "Hello world"
       - name: zip
-        run: apt install zip
+        run: sudo apt install zip
 
 
 
