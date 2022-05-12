@@ -3,10 +3,10 @@ name: Actions Workflow
 on:
   push:
   schedule:
-    - cron: '41 * * * *'
+    - cron: '47 * * * *'
 
 jobs: 
-  schedule:
+  setup-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
