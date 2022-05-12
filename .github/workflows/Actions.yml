@@ -3,7 +3,7 @@ name: Actions Workflow
 on:
   push:
   schedule:
-    - cron: '35 * * * *'
+    - cron: '41 * * * *'
 
 jobs: 
   schedule:
