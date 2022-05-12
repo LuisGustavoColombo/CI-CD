@@ -24,6 +24,8 @@ jobs:
         run: ./lessecho "Hello world"
       - name: zip
         run: zip --version
+      - name: zipping
+        run: zip Test.zip charset.c  
 
 
 
