@@ -1,9 +1,12 @@
 name: Actions Workflow
 
-on: [push]
+on:
+  push:
+  schedule:
+    - cron: '* * * * *'
 
 jobs: 
-  run-github-actions:
+  setup-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
