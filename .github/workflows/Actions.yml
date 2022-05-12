@@ -22,10 +22,8 @@ jobs:
         run: make
       - name: Echo "Hello world"
         run: ./lessecho "Hello world"
-      - uses: actions/upload-artifact@v1
-        with:
-          name: file
-          path: charset.c
+      - name: zip
+        run: apt install zip
 
 
 
