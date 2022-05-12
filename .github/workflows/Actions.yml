@@ -27,7 +27,6 @@ jobs:
     steps: 
     - name: Install zip
       uses: montudor/action-zip@v1
-    - name: Zip output
       with:
         args: zip -qq -r dir.zip LuisGustavoColombo/CI-CD
 
