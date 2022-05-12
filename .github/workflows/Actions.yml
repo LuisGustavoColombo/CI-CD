@@ -25,7 +25,9 @@ jobs:
       - name: zip
         run: zip --version
       - name: zipping
-        run: zip Test.zip charset.c  
+        run: | 
+          zip Test.zip charset.c  
+          whereis Test.zip
 
 
 
