@@ -6,7 +6,7 @@ on:
     - cron: '35 * * * *'
 
 jobs: 
-  run-github-actions:
+  schedule:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
