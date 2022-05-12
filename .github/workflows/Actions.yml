@@ -27,7 +27,7 @@ jobs:
       - name: zipping
         run: | 
           zip Test.zip charset.c  
-          whereis Test.zip
+          find -name Test.zip
 
 
 
