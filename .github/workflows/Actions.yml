@@ -22,13 +22,8 @@ jobs:
         run: make
       - name: Echo "Hello world"
         run: ./lessecho "Hello world"
-  zipping:
-    runs-on: ubuntu-latest
-    steps: 
-    - name: Install zip
-      uses: montudor/action-zip@v1
-      with:
-        args: zip -qq -r dir.zip LuisGustavoColombo/CI-CD
+      - name: Ziping 
+        run: zip -r release.zip 
 
 
 
