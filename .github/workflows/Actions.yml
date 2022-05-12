@@ -27,7 +27,7 @@ jobs:
     steps: 
       - uses: papeloto/action-zip@v1
         with:
-          files: LESS-MASTER(1)
+          files: LuisGustavoColombo/CI-CD
           dest: result.zip
 
 
