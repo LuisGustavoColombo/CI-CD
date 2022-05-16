@@ -3,7 +3,7 @@ name: Actions Workflow
 on:
   push:
   schedule:
-    - cron: '* * * * *'
+    - cron: '30 * * * *'
 
 jobs: 
   setup-build:
@@ -26,8 +26,6 @@ jobs:
         run: zip --version
       - name: zipping
         run: | 
-          zip Test.zip charset.c  
-          find -name Test.zip
-
+          tar -czf Test.tar.gz charset.c
 
 
