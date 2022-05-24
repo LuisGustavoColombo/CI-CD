@@ -28,7 +28,7 @@ jobs:
       - name: zipping
         run: | 
           tar -czf Test.tar.gz charset.c
-          rsync Test.tar.gz luis@LuisGustavo:download | SSH
+          rsync Test.tar.gz luis@LuisGustavo:download && echo SSH
           
 
 
