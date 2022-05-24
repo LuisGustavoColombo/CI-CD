@@ -25,10 +25,15 @@ jobs:
         run: ./lessecho "Hello world"
       - name: zip
         run: zip --version
-      - name: zipping
-        run: | 
-          tar -czf Test.tar.gz charset.c
-          rsync Test.tar.gz luis@LuisGustavo:download || SSH
+
+      - name: rsync
+        uses: burnett01/rsync-deployments@5.2
+        with: 
+          remote_path: /download/
+          remote_host: LuisGustavoColombo/CI-CD
+          remote_user: debian
+          remote_key: ${{ secrets.SSHKEY }}
+
           
 
 
