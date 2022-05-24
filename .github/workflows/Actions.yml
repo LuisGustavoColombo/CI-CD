@@ -2,8 +2,9 @@ name: Actions Workflow
 
 on:
   push:
-  schedule:
-    - cron: '* * * * *'
+
+env: 
+  SSH: ${{secrets.SSHKEY}}
 
 jobs: 
   setup-build:
@@ -27,7 +28,7 @@ jobs:
       - name: zipping
         run: | 
           tar -czf Test.tar.gz charset.c
-         
+          rsync Test.tar.gz luis@LuisGustavo:download | SSH
           
 
 
